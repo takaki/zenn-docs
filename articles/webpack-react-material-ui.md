@@ -3,7 +3,7 @@ emoji: "💻"
 type: "tech"
 published: true
 title: webpack+React+material-uiの環境を最小手順で作成
-topics: ["webpack","React","JavaScript","material-ui","YARN"]
+topics: ["webpack","React","JavaScript","materialui","YARN"]
 author: takaki@github
 slide: false
 ---

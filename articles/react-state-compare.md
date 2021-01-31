@@ -3,7 +3,7 @@ emoji: "💻"
 type: "tech"
 published: true
 title: Reactコンポーネントに状態を持たせる方法の比較
-topics: ["TypeScript","React","redux","react-hooks"]
+topics: ["TypeScript","React","redux","reacthooks"]
 author: takaki@github
 slide: false
 ---

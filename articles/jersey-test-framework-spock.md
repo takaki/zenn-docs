@@ -3,7 +3,7 @@ emoji: "💻"
 type: "tech"
 published: true
 title: Jersey Test FrameworkをSpockで動かす
-topics: ["Java","JAX-RS","spock"]
+topics: ["Java","JAXRS","spock"]
 author: takaki@github
 slide: false
 ---

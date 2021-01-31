@@ -3,7 +3,7 @@ emoji: "💻"
 type: "tech"
 published: true
 title: JAX-RSのBean Validationの例
-topics: ["Java","JAX-RS","spock"]
+topics: ["Java","JAXRS","spock"]
 author: takaki@github
 slide: false
 ---

@@ -3,7 +3,7 @@ emoji: "💻"
 type: "tech"
 published: true
 title: JAX-RSでJSONを返す
-topics: ["Java","JAX-RS","JSON"]
+topics: ["Java","JAXRS","JSON"]
 author: takaki@github
 slide: false
 ---
