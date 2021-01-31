@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: JAX-RSのBean Validationの例
+topics: ["Java","JAX-RS","spock"]
+author: takaki@github
+slide: false
+---
 JAX-RSのBean Validationのいくつかの例を上げる。
 
 validatorは`javax.validation.constraints`にある。例えば次のようになる。

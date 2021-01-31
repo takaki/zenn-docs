@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: PythonのDSLでJSON Schemaを書く
+topics: ["Python","jsonschema","JSON"]
+author: takaki@github
+slide: false
+---
 JSON SchemaというJSONのスキーマをJSONで定義するものがある。が，JSON Schemaを手でちまちま書いていると面倒なので作成のためのツールがある。そのなかでPythonでJSON SchemaのDSLを作成したjslというパッケージについて簡単な説明をする。
 
 サンプルとして以下のようなJSON Schemaを使う。

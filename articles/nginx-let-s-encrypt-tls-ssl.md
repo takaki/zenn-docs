@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: nginxをLet's encryptを使ってTLS/SSL化する
+topics: ["nginx","HTTP","SSL証明書"]
+author: takaki@github
+slide: false
+---
 Let's encryptが使えるようになってからもかなり放置していたnginxのTLS/SSL化をやっと設定したのでメモ。
 
 ## 環境

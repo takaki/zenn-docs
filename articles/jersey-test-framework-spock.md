@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: Jersey Test FrameworkをSpockで動かす
+topics: ["Java","JAX-RS","spock"]
+author: takaki@github
+slide: false
+---
 JAX-RSのユニットテストのライブラリにJersey Test Frameworkがある。ドキュメントはJUnitの説明だけなのでSpockで動かす例を説明する。
 
 ```build.gradle
@@ -81,3 +90,4 @@ class HelloResourceTest extends Specification {
 
 # 参考
 * https://jersey.java.net/documentation/latest/user-guide.html#test-framework
+

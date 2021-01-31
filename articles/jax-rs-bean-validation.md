@@ -1,3 +1,10 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: JAX-RSのBean Validationの基礎
+topics: ["Java","JAX-RS","spock"]
+---
 JAX-RSにはBean Validationを使って渡されるパラメータを検証することができる。その使い方。
 
 ```build.gradle

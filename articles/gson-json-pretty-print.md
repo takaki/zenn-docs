@@ -1,3 +1,11 @@
+---
+title: Gsonを使ってJSONのpretty print
+topics: ["Java","JSON","GSON"]
+type: "tech"
+emoji: "💻"
+published: true
+---
+
 Gsonを使ってJSONのpretty print。ワンライナー風。
 
 ```java:GsonJsonPP.java

@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: redux で非同期アクションを使う
+topics: ["TypeScript","React","redux"]
+author: takaki@github
+slide: false
+---
 redux-promiseの使い方 (https://qiita.com/takaki@github/items/42bddf01d36dc18bdc8e) の改訂版
 
 reduxに対して非同期アクションは使えるのか調べたら素直に使えるようになっていた。以前はredux-promiseというミドルウェアを使っていたが必要なくなっていた。

@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: React Routerと動的インポートを使う
+topics: ["TypeScript","React","ReactRouter"]
+author: takaki@github
+slide: false
+---
 React Routerを使ってページを分割するときに各コンポーネントを動的インポートで使いたい場合は以下のようにする。
 
 まず必要なライブラリの追加。

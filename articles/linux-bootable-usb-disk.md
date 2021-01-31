@@ -1,3 +1,12 @@
+---
+emoji: "💻"
+type: "tech"
+published: true
+title: Linuxでbootable USB diskイメージを作成する
+topics: ["USB"]
+author: takaki@github
+slide: false
+---
 ISO9660形式で配布されているインストーラをCDやDVDに焼かずにUSBメモリからブートするためのイメージを作成した。
 
 ダウンロードしたISOイメージをisohybrid で変換する。Debianではsyslinux-utilsパッケージに含まれている。

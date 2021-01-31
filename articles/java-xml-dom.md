@@ -1,3 +1,12 @@
+---
+title: JavaでXML DOMを処理するいくつかの方法.
+topics: ["Java","XML", "DOM"]
+type: "tech"
+emoji: "💻"
+published: true
+---
+
+
 # 環境
 * Java 8
 * Joox 1.3.0

@@ -1,8 +1,11 @@
 ---
 title: DOMのElementをJAXBでunmarshalする
-tags: Java XML dom JAXB
+tags: ["Java", "XML", "dom", "JAXB"]
 author: takaki@github
 slide: false
+published: true
+emoji: "💻"
+type: "tech"
 ---
 意外にもサンプルプログラムが簡単に見つからなかったのでメモ。
 

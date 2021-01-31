@@ -1,11 +1,9 @@
 ---
-emoji: "💻"
-type: "tech"
-published: true
 title: FlywayのサンプルをSQLiteでやってみる
 topics: ["Java","sqlite","gradle"]
-author: takaki@github
-slide: false
+type: "tech"
+emoji: "💻"
+published: true
 ---
 FlywayはJDBCを使ったデータベースマイグレーションツール。FlywayのページにはH2+Gradleのサンプルが書いてあるがSQLiteでやってみた。
 
