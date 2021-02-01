@@ -70,5 +70,6 @@ export default App;
 
 このコンポーネントを表示させるとわかるが `/import-sync` のほうはページをロードした時刻が表示され `/import-async` のほうは実際に対象のURLにアクセスした時刻が表示される。
 
+* https://codesandbox.io/s/sleepy-wood-goot7 デモページ
 * https://reacttraining.com/react-router/web/guides/code-splitting
 * https://github.com/smooth-code/loadable-components
