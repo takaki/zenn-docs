@@ -11,6 +11,8 @@ Slack APIを他の言語で使った経験があり雰囲気はわかってい�
 
 ## cargoの設定
 
+slack-apiのcrateを使う。
+
 async clientを使うときにmainでtokio-1.0を使っているとslack-apiがtokio-0.2のためそのままだと動かない。
 互換性のライブラリを入れる必要がある。さらにasyncを呼び出すときにcompat()をつける必要がある。
 
