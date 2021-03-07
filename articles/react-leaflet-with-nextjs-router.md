@@ -2,7 +2,7 @@
 title: "React LeafletとNext.js Routerの組み合わせ "
 emoji: "👌"
 type: "tech"
-topics: [react, reactrouter, leaflet, nestjs]
+topics: [react, reactrouter, leaflet, nextjs]
 published: true
 ---
 React LaefletというReactを使ってブラウザで地図を表示するライブラリがある。しかしReactなのでCSRであってSSRのNext.jsでは黒魔術を使わないと基本的に使えなかった。
