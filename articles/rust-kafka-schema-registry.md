@@ -23,10 +23,6 @@ schema_registry_converterのサンプルだとrdkafkaを使っていたのでを
 
 https://developer.confluent.io/tutorials/create-session-windows/ksql.html
 
-
-
-
-
 以下ざっと解説。
 
 brokerとschema registryを指定する。
@@ -78,7 +74,6 @@ consumerの作成にはbuilderパターンを使っているが詳しいオプ�
 
 実行すると以下のような出力が得られるはずである。
 
-
 ```
 Record([("IP", Union(String("51.56.119.117"))), ("URL", Union(String("/etiam/justo/etiam/pretium/iaculis.xml"))), ("TIMESTAMP", Union(String("2019-07-18T10:00:00Z")))])
 Record([("IP", Union(String("51.56.119.117"))), ("URL", Union(String("/nullam/orci/pede/venenatis.json"))), ("TIMESTAMP", Union(String("2019-07-18T10:01:00Z")))])
@@ -90,3 +85,5 @@ Record([("IP", Union(String("51.56.119.117"))), ("URL", Union(String("/convallis
 文字列としてはちゃんと取れていそうではあるがでは個々の要素を取りたい…となったときには別の工夫が必要になる。
 
 `result.value`はavro_rs::types::Valueというenumになっている。地道にenumを分解してね…ってことになるがこれは別の話なのでやらない(がよくある話だとは思う)。
+
+
