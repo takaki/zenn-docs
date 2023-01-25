@@ -1,5 +1,5 @@
 ---
-title: "Rust で GTK+3 で GTK+4 の違いを見る"
+title: "Rust で GTK3 で GTK4 の違いを見る"
 emoji: "🙆"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [Rust, GTK]
@@ -8,7 +8,7 @@ published: true
 
 https://gitlab.com/-/snippets/2488173
 
-RustでGTK+3を使ったプログラムをGTK+4に移植する前に調査してみた。
+RustでGTK3を使ったプログラムをGTK4に移植する前に調査してみた。
 サンプルプログラムを書いてどれぐらいの変化があるかということを確認した。
 
 サンプルプログラムは以下の画像のようなもの。ボタンをクリックするとカウントが増える。
@@ -22,7 +22,7 @@ gtk = "0.16.2"
 gtk4 = "0.5.5
 ```
 
-まずはGTK+3。
+まずはGTK3。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -64,7 +64,7 @@ fn main() {
 }
 ```
 
-次はGTK+4。
+次はGTK4。
 
 ```rust
 use std::sync::{Arc, Mutex};

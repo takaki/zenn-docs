@@ -1,5 +1,5 @@
 title: "TonicとNextでgRPCを使ったWebシステムを作る"
 summary: "gRPC"
-topics: ["Rust", "gRPC", "Nextjs", "Tonic", "SeaORM"]
+topics: ["Rust", "gRPC", "NextJS", "Tonic", "SeaORM"]
 published: false
 price: 0
