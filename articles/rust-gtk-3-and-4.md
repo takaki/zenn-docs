@@ -109,3 +109,39 @@ fn main() {
 プログラムの構造としてはほぼ同じだがコンテナに要素を追加するメソッドが`add`から`append`に変わっているなど微妙な差異が出ている。
 当然コンパイルエラーになるので気付くのだがそれなりに面倒な感じがする。
 
+## キー入力イベントの処理
+
+GTK4になってかなり書き方が変わった。
+`key-press`イベントにコールバックを設定するのではなく`EventControllerKey`に対してコールバックを追加し，
+ウィジェットにそのコントローラを追加する形になった。
+
+
+```rust
+        let controller = EventControllerKey::new();
+        let app = app.clone();
+        controller.connect_key_pressed(move |_controller, k, _c, _m| {
+            if k == Key::Escape {
+                app.quit();
+            };
+            Inhibit(false)
+        });
+        window.add_controller(&controller);
+```
+
+## drawイベントの廃止
+
+drawイベントが廃止されコールバックを別に登録する形となった。
+
+```rust
+        let drawing_area = DrawingArea::builder()
+            .width_request(200)
+            .height_request(200)
+            .build();
+        drawing_area.set_draw_func(move |_area, cr, _width, _height| {
+            cr.set_source_rgb(0.1, 0.1, 0.1);
+            cr.rectangle(30.0, 30.0, 40.0, 40.0);
+            cr.fill().unwrap();
+        });
+        list_box.append(&drawing_area);
+        window.set_child(Some(&list_box));
+```
