@@ -3,7 +3,7 @@ title: "JetBrainsでAWS CodeWhispererを使う"
 emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [AWS, CodeWhisperer]
-published: false
+published: true
 ---
 チュートリアルのビデオを見るのが一番早いが一応説明する。
 
