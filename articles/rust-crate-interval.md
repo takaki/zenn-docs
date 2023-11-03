@@ -16,7 +16,7 @@ rustでinterval setのcrateについて調べた。
 
 ### 結論
 
-これさえ使っておけばいいというのは見つかってない。
+長期間放置されているものが多い。これさえ使っておけばいいというのは見つかってない。
 
 
 ## crate紹介
@@ -29,7 +29,6 @@ rustでinterval setのcrateについて調べた。
 - 閉区間のみ
 - 演算はIntervalSetだとできる
 - 単独のIntervalだと演算はできない。ちょっと設計がこなれてない感はある
--
 
 ```rust
 use interval_set::{Interval, ToIntervalSet};
