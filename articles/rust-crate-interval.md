@@ -207,7 +207,6 @@ fn test() {
 use intervals_general::bound_pair::BoundPair;
 use intervals_general::interval::Interval;
 
-#[test]
 fn test() {
     let i: Interval<i64> = Interval::Open {
         bound_pair: BoundPair::new(10, 20).unwrap(),
@@ -259,7 +258,6 @@ fn test() {
 
 use honestintervals::{Interval, IntervalSet};
 
-#[test]
 fn test() {
     let i = Interval::new(0.0, 10.0);
     let j = Interval::new(5.0, 15.0);
