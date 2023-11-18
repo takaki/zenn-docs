@@ -55,7 +55,7 @@ error: Entity must have a primary key column. See <https://github.com/SeaQL/sea-
 5 | #[derive(Clone, Debug, PartialEq, DeriveEntityModel, Eq)]
   |                                   ^^^^^^^^^^^^^^^^^
   |
-  = note: this error originates in the derive macro `DeriveEntityModel` (in Nightly builds, run with -Z macro-backtrace for more info)
+  = note: this error originates in the derive macro `DeriveEntityModel` (in Nightly builds, run with -Z macro-backtrace **for more info)
 ```
 
 SeaORMはPrimary Keyがないテーブルにまだ対応してないらしい。
@@ -71,7 +71,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let url = "sqlite:///home/takaki/var/Kotti.db";
     let conn = Database::connect(url).await?;
 
-    let node = Nodes::find_by_id(1);
+    let node = Nodes::find_by_id(1).one(&conn).await?.unwrap();
     println!("{:?}", node);
     let nodes = Nodes::find().all(&conn).await?;
     nodes.iter().for_each(|n| {
