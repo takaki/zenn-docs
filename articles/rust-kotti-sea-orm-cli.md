@@ -9,6 +9,7 @@ Kotti (https://github.com/Kotti/Kotti) というPythonによるCMSを以前使�
 データはSQLiteで保存していた。これをRustで取り出すこととして，SeaORMを使ってみることにした。
 今回はSeaORM CLIというツールで既存のテーブルからコードを生成した。
 
+- https://gitlab.com/takatan/kotti-dump 作ったツールのコード
 
 ### コード生成
 
