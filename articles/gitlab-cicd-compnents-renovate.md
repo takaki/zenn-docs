@@ -3,20 +3,16 @@ title: "GitLabのCI/CD componentsでRenovateを導入する"
 emoji: "🔖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ "GitLab", "Renovate" ]
-published: false
+published: true
 ---
 
-GitLabにCI/CDコンポーネントという機能が導入された。
-GitHubで言えばGitHub Actionsのカスタムアクションのようなものである。
+GitLabにCI/CDコンポーネントという機能が導入された。GitHubで言えばGitHub Actionsのカスタムアクションのようなものである。
 
 https://docs.gitlab.com/ee/ci/components/index.html
 
-今までもCI/CD templatesというyamlの設定ファイルをインクルードする機能を応用する形で
-似たような機能があったがより洗練された独立した機能として導入された。
+今までもCI/CD templatesというyamlの設定ファイルをインクルードする機能を応用する形で似たような機能があったがより洗練された独立した機能として導入された。
 
-Renovateはソースコードが依存しているパッケージにバージョンアップがあったときに
-アップデートするためのMerge Requestを自動作成してくれるソフトである
-(同様なソフトでDependabotなどもある)。
+Renovateはソースコードが依存しているパッケージにバージョンアップがあったときにアップデートするためのMerge Requestを自動作成してくれるソフトである(同様なソフトでDependabotなどもある)。
 
 https://docs.renovatebot.com/
 
@@ -33,8 +29,7 @@ https://gitlab.com/explore/catalog
 
 https://gitlab.com/explore/catalog/to-be-continuous/renovate
 
-まず事前にトークンを用意しておく。
-ドキュメントにもあるようにGitLabとGitHubのトークンが必要になる。
+まず事前にトークンを用意しておく。ドキュメントにもあるようにGitLabとGitHubのトークンが必要になる。
 GitLabはプロジェクトのトークンを作成する。
 説明にあるように api・write_repository・read_read_regsitryで
 Developerのトークンを作成する。
@@ -74,6 +69,7 @@ variables:
 以下のような出力がされるはずである。
 
 ```shell
+...
 $ renovate $RENOVATE_EXTRA_FLAGS
  WARN: env config dryRun property has been changed to null
  INFO: Autodiscovered repositories
@@ -82,7 +78,7 @@ $ renovate $RENOVATE_EXTRA_FLAGS
  INFO: Repository started (repository=takatan/warikanjs)
        "renovateVersion": "37.170.0"
  INFO: Dependency extraction complete (repository=takatan/warikanjs, baseBranch=master)
+ ...
 ```
 
-実際導入した感想だが，設定ファイルの書き方は簡易になっていてわかりやすくなった。
-Renovateのコンポーネントが変数の設定の説明が少なくてちょっと苦労した。
+実際導入した感想だが，設定ファイルの書き方は簡易になっていてわかりやすくなった。Renovateのコンポーネントが変数の設定の説明が少なくてちょっと苦労した。
