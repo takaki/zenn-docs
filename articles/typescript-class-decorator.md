@@ -3,7 +3,7 @@ title: "TypeScriptのclass decoratorを試す"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["TypeScript"]
-published: false
+published: true
 ---
 TypeScriptであるベースクラスのサブクラス一覧を保持しておいて文字列からサブクラスインスタンスを作るようなことをしたかった。
 Rubyだと組込でそんなことができたりするがTypeScript(JavaScript)だとそんなものはなくてなんとかならないかと試行錯誤していた。
@@ -40,7 +40,7 @@ const { inject, getInjections } = createInjections();
 
 abstract class BaseClass {}
 
-// これはtypescriptの文法違反になる
+// これはTypeScriptがエラーになる
 // @inject('not subclass')
 // class NotBase {}
 
